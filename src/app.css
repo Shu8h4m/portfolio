@@ -9,13 +9,15 @@
   max-width: 1000px;
   background-color: transparent;
   margin: auto;
+  height: 100%;
 }
 
 /* Small devices (mobile, less than 600px) */
+
 @media (max-width: 599px) {
   .app-wrapper {
     width: 100%;
-    padding: 10px;
+    overflow-y: scroll;
   }
 }
 

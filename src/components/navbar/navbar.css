@@ -16,10 +16,10 @@
   width: 100%;
   border-bottom: 1px solid #333;
   padding-top: 10px;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  background-color: black; /* Dark transparent background */
   z-index: 1000; /* Ensure navbar is on top */
   animation: fadeIn 1s ease-out; /* Navbar fades in on load */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-wrapper {
@@ -83,13 +83,14 @@
 }
 
 /* Media Query for Mobile Devices (max-width: 599px) */
+
 @media (max-width: 380px) {
   .nav-left {
-    gap: 0.3rem; /* Reduced gap for very small screens */
+    gap: 0.15rem; /* Reduced gap for very small screens */
   }
 
   .nav-right {
-    gap: 0.3rem; /* Reduced gap for right-aligned items */
+    gap: 0.1 rem; /* Reduced gap for right-aligned items */
   }
 
   .navbar-wrapper {
@@ -97,17 +98,17 @@
   }
 
   .nav-left a {
-    font-size: 14px; /* Reduced font size for smaller screens */
+    font-size: 12px; /* Reduced font size for smaller screens */
   }
 
   .contact-button {
     padding: 5px 10px; /* Smaller button padding */
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 /* Media Query for Mobile Devices (max-width: 599px) */
-@media (max-width: 599px) {
+@media (min-width: 381px) and (max-width: 599px) {
   .nav-left {
     gap: 0.5rem; /* Reduced gap for mobile screens */
   }

@@ -7,7 +7,7 @@ const Certificate = () => {
       <h2>MERN Stack Development - UpGrad</h2>
       <div className="certificate-preview">
         <img
-          src="public\upGrad-certificate.png" // Replace with the path to the thumbnail of your certificate
+          src="/upGrad-certificate.png" // Replace with the path to the thumbnail of your certificate
           alt="MERN Stack Certificate"
           className="certificate-image"
         />

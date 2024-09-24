@@ -9,7 +9,7 @@ const Project = () => {
     >
       <div className="card">
         <div className="card-image">
-          <img src="src\assets\Bhoyar-social-app.png" alt="Project" />
+          <img src="public\Bhoyar-social-app.png" alt="Project" />
         </div>
         <div className="card-content">
           <h3>Social App</h3>

@@ -1,0 +1,149 @@
+/* .about-container {
+  width: 100%;
+  
+  background-color: transparent;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: transparent;
+  margin-top: 40px;
+  color: white;
+  padding: 10px 25px;
+}
+
+.about-tab-container {
+  display: flex;
+  gap: 40px;
+  background-color: transparent;
+
+  color: white;
+}
+
+.clicked {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+}
+
+.about-tab {
+  padding: 10px;
+  
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about-content {
+  border-bottom: 1px double gray;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+.about-container {
+  width: 100%;
+  background-color: transparent;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: transparent;
+  margin-top: 40px;
+  color: white;
+  padding: 10px 25px;
+}
+
+.about-tab-container {
+  display: flex;
+  gap: 40px;
+  background-color: transparent;
+  color: white;
+}
+
+.clicked {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+}
+
+.about-tab {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about-content {
+  border-bottom: 1px double gray;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 599px) */
+@media (max-width: 599px) {
+  .about-container-wrapper {
+    padding: 10px 15px;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .about-tab-container {
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(39, 38, 38);
+  }
+
+  .about-tab,
+  .clicked {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .about-content {
+    border-bottom: 1px double gray;
+  }
+}
+
+/* Media Query for Tablets (600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .about-container-wrapper {
+    padding: 10px 20px;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .about-tab-container {
+    gap: 30px;
+  }
+
+  .about-tab,
+  .clicked {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .about-content {
+    border-bottom: 1px double gray;
+  }
+}

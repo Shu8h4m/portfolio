@@ -1,0 +1,35 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.school p,
+.college p {
+  color: gray;
+}
+
+.college {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

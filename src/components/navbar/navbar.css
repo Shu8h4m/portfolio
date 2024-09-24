@@ -1,0 +1,137 @@
+/* Animation for fade-in effect on page load */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #333;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  z-index: 1000; /* Ensure navbar is on top */
+  animation: fadeIn 1s ease-out; /* Navbar fades in on load */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 18px;
+  padding: 25px 10px;
+}
+
+.nav-left {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: gray;
+  padding: 10px;
+  text-align: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-left a:hover {
+  color: white;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.nav-right {
+  align-items: center;
+}
+
+.contact-button {
+  padding: 8px 20px;
+  font-size: 18px;
+  background-color: black;
+  border: 1px solid #747373;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-button:hover {
+  background-color: #444; /* Change background color on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.contact-button:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+/* Media Query for Mobile Devices (max-width: 599px) */
+@media (max-width: 380px) {
+  .nav-left {
+    gap: 0.3rem; /* Reduced gap for very small screens */
+  }
+
+  .nav-right {
+    gap: 0.3rem; /* Reduced gap for right-aligned items */
+  }
+
+  .navbar-wrapper {
+    padding: 8px; /* Reduced padding for very small screens */
+  }
+
+  .nav-left a {
+    font-size: 14px; /* Reduced font size for smaller screens */
+  }
+
+  .contact-button {
+    padding: 5px 10px; /* Smaller button padding */
+    font-size: 14px;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 599px) */
+@media (max-width: 599px) {
+  .nav-left {
+    gap: 0.5rem; /* Reduced gap for mobile screens */
+  }
+
+  .nav-right {
+    gap: 0.5rem; /* Reduced gap for right-aligned items on mobile */
+  }
+
+  .navbar-wrapper {
+    padding: 10px; /* Reduced padding for mobile */
+  }
+}
+
+/* Media Query for Tablets (600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .nav-left {
+    gap: 1rem; /* Slightly reduced gap for tablets */
+  }
+
+  .nav-right {
+    gap: 1rem; /* Reduced gap for right-aligned items on tablets */
+  }
+
+  .navbar-wrapper {
+    padding: 15px; /* Adjusted padding for tablets */
+  }
+}

@@ -1,0 +1,186 @@
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-out;
+}
+
+.home-name {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#intro h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#intro p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Styling for the links section */
+.home-links-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+/* Styling for individual link containers */
+.home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  background-color: rgba(35, 34, 34, 0.5);
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for icons and arrows */
+.home-link-icon {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.home-link-arrow {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.home-link:hover .home-link-icon,
+.home-link:hover .home-link-arrow {
+  transform: scale(1.1);
+}
+
+/* Hover effect for text */
+.home-link:hover span {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsive Design */
+/* Small devices (mobile, less than 600px) */
+@media (max-width: 599px) {
+  .home-container {
+    padding: 20px 10px;
+  }
+
+  .home-name {
+    font-size: 32px;
+  }
+
+  #intro h2 {
+    font-size: 20px;
+  }
+
+  #intro p {
+    font-size: 14px;
+  }
+
+  .home-links-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .home-link {
+    padding: 8px 15px;
+  }
+
+  .home-link-icon,
+  .home-link-arrow {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home-container {
+    max-width: 600px;
+    padding: 30px 15px;
+  }
+
+  .home-name {
+    font-size: 40px;
+  }
+
+  #intro h2 {
+    font-size: 24px;
+  }
+
+  #intro p {
+    font-size: 16px;
+  }
+
+  .home-links-container {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .home-link {
+    padding: 10px 18px;
+  }
+
+  .home-link-icon,
+  .home-link-arrow {
+    font-size: 22px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1025px and above) */
+@media (min-width: 1025px) {
+  .home-container {
+    max-width: 800px;
+    padding: 40px 20px;
+  }
+
+  .home-name {
+    font-size: 48px;
+  }
+
+  #intro h2 {
+    font-size: 28px;
+  }
+
+  #intro p {
+    font-size: 18px;
+  }
+
+  .home-links-container {
+    gap: 30px;
+  }
+
+  .home-link {
+    padding: 10px 20px;
+  }
+
+  .home-link-icon,
+  .home-link-arrow {
+    font-size: 24px;
+  }
+}

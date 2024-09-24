@@ -1,0 +1,27 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.app-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  background-color: transparent;
+  margin: auto;
+}
+
+/* Small devices (mobile, less than 600px) */
+@media (max-width: 599px) {
+  .app-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .app-wrapper {
+    width: 95%;
+  }
+}
